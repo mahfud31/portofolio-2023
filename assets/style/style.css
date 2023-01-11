@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap");
+body {
+  background: #161822;
+}
+
+.navbar {
+  background-color: #161822;
+  font-family: "Heebo", sans-serif;
+}
+.navbar .navbar-brand {
+  font-size: 25px !important;
+}
+
+.main-content {
+  margin-top: 100px;
+}
+@media (max-width: 767.98px) {
+  .main-content {
+    margin-top: 0px;
+  }
+}
+.main-content .blob {
+  width: 500px;
+  right: 50px;
+  top: 50px;
+  filter: drop-shadow(0px 0px 150px #8a3ffc);
+  opacity: 0.2;
+  z-index: -1;
+}
+.main-content .text-header h1 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: bold;
+}
+.main-content .typed::after {
+  content: "<";
+  display: inline;
+  -webkit-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+.main-content .typed-cursor {
+  opacity: 0;
+  display: none;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main-content #skills,
+.main-content #contact {
+  background-color: #171b2a;
+}
+.main-content .card-html:hover {
+  box-shadow: 0 0 20px #e44d26;
+}
+.main-content .card-css:hover {
+  box-shadow: 0 0 20px #0277bd;
+}
+.main-content .card-js:hover {
+  box-shadow: 0 0 20px #dab92d;
+}
+.main-content .card-bootstrap:hover {
+  box-shadow: 0 0 20px #7b12f8;
+}
+.main-content .card-laravel:hover {
+  box-shadow: 0 0 20px #ff291a;
+}
+.main-content .card-github:hover {
+  box-shadow: 0 0 20px #ffffff;
+}
+.main-content .card-vscode:hover {
+  box-shadow: 0 0 20px #3ba8f2;
+}
+.main-content .card-figma:hover {
+  box-shadow: 0 0 20px #0acf83;
+}
+.main-content .project .card {
+  min-height: 13rem;
+  overflow: hidden;
+}
+.main-content .project .card .content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 82%;
+  left: 0;
+  background: rgba(32, 32, 32, 0.9);
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.main-content .project .card .content .tagline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  width: 100%;
+  padding-left: 1rem;
+  background: #141414;
+}
+.main-content .project .card .content .description {
+  margin: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-content .project .card .content .description .btns .btn-preview:hover {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+.main-content .project .card .content .description .btns .btn-code:hover {
+  background-color: #000;
+  border-color: #000;
+}
+.main-content .project .card:hover .content {
+  top: 8%;
+  transition: 0.5s;
+}
+
+.footer {
+  background: #000;
+  font-family: "JetBrains Mono", monospace;
+}
+.footer .sosmed a {
+  color: #adb5bd;
+}
+.footer .sosmed a i {
+  font-size: 1.5rem;
+}
+.footer .icn-fb:hover {
+  color: #0d6efd;
+}
+.footer .icn-ig:hover {
+  color: #f502bd;
+}
+.footer .icn-wa:hover {
+  color: #17980e;
+}
+.footer .icn-gh:hover {
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
